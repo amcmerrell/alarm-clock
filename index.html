@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="build/css/vendor.css">
+    <script src="build/js/vendor.min.js"></script>
+    <script type="text/javascript" src="build/js/app.js"></script>
+    <meta charset="utf-8">
+    <title>Alarm Clock</title>
+  </head>
+  <body>
+    <form id='setAlarm'>
+      <label for='alarmTime'>Time for alarm to go off:</label>
+      <input type='datetime-local' id='alarmTime' name='alarmTime'>
+      <button type='submit'>Set</button>
+    </form>
+
+    <form id="snooze">
+      <label for='snoozeTime'>How many minutes would you like to snooze?</label>
+      <input type='number' id='snoozeTime' name='snoozeTime'>
+      <button class="btn btn-danger" type="submit">Snooze</button>
+    </form>
+
+    <div id='alarms'>
+      <h3>Alarm Time:</h3>
+  </div>
+
+
+    <div>
+      <h3>Current Time:</h3>
+      <p id='currentTime'></p>
+    </div>
+  </body>
+</html>
